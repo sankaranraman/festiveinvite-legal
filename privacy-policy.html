@@ -14,12 +14,15 @@
         margin: 0 auto;
         padding: 20px;
         background-color: #f9f9f9;
+        box-sizing: border-box;
       }
       .container {
         background: white;
         padding: 40px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        width: 100%;
       }
       h1 {
         color: #ff9933;
@@ -51,6 +54,51 @@
       .last-updated {
         color: #666;
         font-style: italic;
+      }
+
+      /* Mobile responsiveness */
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+        .container {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 1.5em;
+        }
+        h2 {
+          font-size: 1.2em;
+        }
+        .highlight {
+          padding: 12px;
+          margin: 15px 0;
+        }
+        .contact-info {
+          padding: 15px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 5px;
+        }
+        .container {
+          padding: 15px;
+        }
+        h1 {
+          font-size: 1.3em;
+        }
+        h2 {
+          font-size: 1.1em;
+        }
+        .highlight {
+          padding: 10px;
+          margin: 10px 0;
+        }
+        .contact-info {
+          padding: 12px;
+        }
       }
     </style>
   </head>
